@@ -65,7 +65,7 @@
 		8AE5DBE92BECD85C00FE51F2 = {
 			isa = PBXGroup;
 			children = (
-				8AE5DBFA2BECD85D00FE51F2 /* CatFactsWatchOS Watch App */,
+				8AE5DBFA2BECD85D00FE51F2 /* CatFactsWatchOS */,
 				8AE5DBF12BECD85D00FE51F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,7 +79,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8AE5DBFA2BECD85D00FE51F2 /* CatFactsWatchOS Watch App */ = {
+		8AE5DBFA2BECD85D00FE51F2 /* CatFactsWatchOS */ = {
 			isa = PBXGroup;
 			children = (
 				8AE5DC122BECDBA800FE51F2 /* Model */,
@@ -89,7 +89,7 @@
 				8AE5DBFF2BECD85F00FE51F2 /* Assets.xcassets */,
 				8AE5DC012BECD85F00FE51F2 /* Preview Content */,
 			);
-			path = "CatFactsWatchOS Watch App";
+			path = CatFactsWatchOS;
 			sourceTree = "<group>";
 		};
 		8AE5DC012BECD85F00FE51F2 /* Preview Content */ = {
@@ -369,7 +369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CatFactsWatchOS Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CatFactsWatchOS/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWP9XW897T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -399,7 +399,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CatFactsWatchOS Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CatFactsWatchOS/Preview Content\"";
 				DEVELOPMENT_TEAM = ZWP9XW897T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

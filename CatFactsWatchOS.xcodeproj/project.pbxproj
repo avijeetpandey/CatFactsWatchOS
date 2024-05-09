@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		8AE5DBF72BECD85D00FE51F2 /* CatFactsWatchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8AE5DBF62BECD85D00FE51F2 /* CatFactsWatchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8AE5DBFC2BECD85D00FE51F2 /* CatFactsWatchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBFB2BECD85D00FE51F2 /* CatFactsWatchOSApp.swift */; };
-		8AE5DBFE2BECD85D00FE51F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBFD2BECD85D00FE51F2 /* ContentView.swift */; };
+		8AE5DBFE2BECD85D00FE51F2 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBFD2BECD85D00FE51F2 /* RootView.swift */; };
 		8AE5DC002BECD85F00FE51F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE5DBFF2BECD85F00FE51F2 /* Assets.xcassets */; };
 		8AE5DC032BECD85F00FE51F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE5DC022BECD85F00FE51F2 /* Preview Assets.xcassets */; };
+		8AE5DC112BECDB8500FE51F2 /* CatFactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DC102BECDB8500FE51F2 /* CatFactsService.swift */; };
+		8AE5DC142BECDBB000FE51F2 /* CatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DC132BECDBB000FE51F2 /* CatModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +44,11 @@
 		8AE5DBF02BECD85D00FE51F2 /* CatFactsWatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFactsWatchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE5DBF62BECD85D00FE51F2 /* CatFactsWatchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CatFactsWatchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE5DBFB2BECD85D00FE51F2 /* CatFactsWatchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsWatchOSApp.swift; sourceTree = "<group>"; };
-		8AE5DBFD2BECD85D00FE51F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8AE5DBFD2BECD85D00FE51F2 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		8AE5DBFF2BECD85F00FE51F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AE5DC022BECD85F00FE51F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8AE5DC102BECDB8500FE51F2 /* CatFactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsService.swift; sourceTree = "<group>"; };
+		8AE5DC132BECDBB000FE51F2 /* CatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,10 @@
 		8AE5DBFA2BECD85D00FE51F2 /* CatFactsWatchOS Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				8AE5DBFB2BECD85D00FE51F2 /* CatFactsWatchOSApp.swift */,
-				8AE5DBFD2BECD85D00FE51F2 /* ContentView.swift */,
+				8AE5DC122BECDBA800FE51F2 /* Model */,
+				8AE5DC0F2BECD8F300FE51F2 /* Service */,
+				8AE5DC0E2BECD8E900FE51F2 /* Views */,
+				8AE5DC0D2BECD8C600FE51F2 /* Application */,
 				8AE5DBFF2BECD85F00FE51F2 /* Assets.xcassets */,
 				8AE5DC012BECD85F00FE51F2 /* Preview Content */,
 			);
@@ -92,6 +98,38 @@
 				8AE5DC022BECD85F00FE51F2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8AE5DC0D2BECD8C600FE51F2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8AE5DBFD2BECD85D00FE51F2 /* RootView.swift */,
+				8AE5DBFB2BECD85D00FE51F2 /* CatFactsWatchOSApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8AE5DC0E2BECD8E900FE51F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8AE5DC0F2BECD8F300FE51F2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8AE5DC102BECDB8500FE51F2 /* CatFactsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8AE5DC122BECDBA800FE51F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8AE5DC132BECDBB000FE51F2 /* CatModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AE5DBFE2BECD85D00FE51F2 /* ContentView.swift in Sources */,
+				8AE5DBFE2BECD85D00FE51F2 /* RootView.swift in Sources */,
+				8AE5DC112BECDB8500FE51F2 /* CatFactsService.swift in Sources */,
+				8AE5DC142BECDBB000FE51F2 /* CatModel.swift in Sources */,
 				8AE5DBFC2BECD85D00FE51F2 /* CatFactsWatchOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

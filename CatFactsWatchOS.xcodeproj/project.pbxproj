@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		8AB84FC52BECEC7400737652 /* FactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB84FC42BECEC7400737652 /* FactsListView.swift */; };
 		8AB84FC72BECED2C00737652 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB84FC62BECED2C00737652 /* LoadingView.swift */; };
+		8AB84FC92BED00AE00737652 /* FactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB84FC82BED00AE00737652 /* FactsView.swift */; };
+		8AB84FCB2BED011200737652 /* RootTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB84FCA2BED011200737652 /* RootTabBarView.swift */; };
+		8AB84FCD2BED053100737652 /* SavedFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB84FCC2BED053100737652 /* SavedFactsView.swift */; };
+		8AB84FCF2BED090600737652 /* SavedFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB84FCE2BED090600737652 /* SavedFact.swift */; };
 		8AE5DBF72BECD85D00FE51F2 /* CatFactsWatchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8AE5DBF62BECD85D00FE51F2 /* CatFactsWatchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8AE5DBFC2BECD85D00FE51F2 /* CatFactsWatchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBFB2BECD85D00FE51F2 /* CatFactsWatchOSApp.swift */; };
 		8AE5DBFE2BECD85D00FE51F2 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBFD2BECD85D00FE51F2 /* RootView.swift */; };
@@ -45,6 +49,10 @@
 /* Begin PBXFileReference section */
 		8AB84FC42BECEC7400737652 /* FactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsListView.swift; sourceTree = "<group>"; };
 		8AB84FC62BECED2C00737652 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8AB84FC82BED00AE00737652 /* FactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsView.swift; sourceTree = "<group>"; };
+		8AB84FCA2BED011200737652 /* RootTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarView.swift; sourceTree = "<group>"; };
+		8AB84FCC2BED053100737652 /* SavedFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedFactsView.swift; sourceTree = "<group>"; };
+		8AB84FCE2BED090600737652 /* SavedFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedFact.swift; sourceTree = "<group>"; };
 		8AE5DBF02BECD85D00FE51F2 /* CatFactsWatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFactsWatchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE5DBF62BECD85D00FE51F2 /* CatFactsWatchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CatFactsWatchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE5DBFB2BECD85D00FE51F2 /* CatFactsWatchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsWatchOSApp.swift; sourceTree = "<group>"; };
@@ -118,6 +126,9 @@
 			children = (
 				8AB84FC42BECEC7400737652 /* FactsListView.swift */,
 				8AB84FC62BECED2C00737652 /* LoadingView.swift */,
+				8AB84FC82BED00AE00737652 /* FactsView.swift */,
+				8AB84FCA2BED011200737652 /* RootTabBarView.swift */,
+				8AB84FCC2BED053100737652 /* SavedFactsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				8AE5DC132BECDBB000FE51F2 /* CatModel.swift */,
+				8AB84FCE2BED090600737652 /* SavedFact.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,6 +250,10 @@
 			files = (
 				8AE5DBFE2BECD85D00FE51F2 /* RootView.swift in Sources */,
 				8AB84FC52BECEC7400737652 /* FactsListView.swift in Sources */,
+				8AB84FCB2BED011200737652 /* RootTabBarView.swift in Sources */,
+				8AB84FC92BED00AE00737652 /* FactsView.swift in Sources */,
+				8AB84FCD2BED053100737652 /* SavedFactsView.swift in Sources */,
+				8AB84FCF2BED090600737652 /* SavedFact.swift in Sources */,
 				8AE5DC112BECDB8500FE51F2 /* CatFactsService.swift in Sources */,
 				8AE5DC142BECDBB000FE51F2 /* CatModel.swift in Sources */,
 				8AE5DBFC2BECD85D00FE51F2 /* CatFactsWatchOSApp.swift in Sources */,

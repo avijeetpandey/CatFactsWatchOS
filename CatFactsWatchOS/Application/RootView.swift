@@ -7,29 +7,9 @@
 
 import SwiftUI
 
-struct RootView: View {
-    @State private var facts = [CatModel]()
-    @StateObject var factsService = CatFactsService()
-    
+struct RootView: View {    
     var body: some View {
-        VStack {
-            switch factsService.state {
-            case .idle, .loading:
-                LoadingView()
-            case .loaded(let facts):
-                FactsListView(facts: facts)
-            case .failed(let error):
-                Text(error.localizedDescription)
-            }
-        }
-        .padding()
-        .task {
-            do  {
-                try await factsService.fetchFacts()
-            } catch {
-                print(error.localizedDescription)
-            }
-        }
+        RootTabBarView()
     }
 }
 

@@ -8,10 +8,12 @@
 import Foundation
 
 // MARK: - CatModel
-struct CatModel: Codable {
+struct CatModel: Codable, Identifiable {
     let text: String
+    let id: String
     
     enum CodingKeys: String, CodingKey {
         case text
+        case id = "_id"
     }
 }

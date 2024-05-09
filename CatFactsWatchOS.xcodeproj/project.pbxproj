@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AB84FC52BECEC7400737652 /* FactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB84FC42BECEC7400737652 /* FactsListView.swift */; };
+		8AB84FC72BECED2C00737652 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB84FC62BECED2C00737652 /* LoadingView.swift */; };
 		8AE5DBF72BECD85D00FE51F2 /* CatFactsWatchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8AE5DBF62BECD85D00FE51F2 /* CatFactsWatchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8AE5DBFC2BECD85D00FE51F2 /* CatFactsWatchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBFB2BECD85D00FE51F2 /* CatFactsWatchOSApp.swift */; };
 		8AE5DBFE2BECD85D00FE51F2 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBFD2BECD85D00FE51F2 /* RootView.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8AB84FC42BECEC7400737652 /* FactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsListView.swift; sourceTree = "<group>"; };
+		8AB84FC62BECED2C00737652 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		8AE5DBF02BECD85D00FE51F2 /* CatFactsWatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFactsWatchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE5DBF62BECD85D00FE51F2 /* CatFactsWatchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CatFactsWatchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE5DBFB2BECD85D00FE51F2 /* CatFactsWatchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsWatchOSApp.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 		8AE5DC0E2BECD8E900FE51F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8AB84FC42BECEC7400737652 /* FactsListView.swift */,
+				8AB84FC62BECED2C00737652 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,9 +237,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AE5DBFE2BECD85D00FE51F2 /* RootView.swift in Sources */,
+				8AB84FC52BECEC7400737652 /* FactsListView.swift in Sources */,
 				8AE5DC112BECDB8500FE51F2 /* CatFactsService.swift in Sources */,
 				8AE5DC142BECDBB000FE51F2 /* CatModel.swift in Sources */,
 				8AE5DBFC2BECD85D00FE51F2 /* CatFactsWatchOSApp.swift in Sources */,
+				8AB84FC72BECED2C00737652 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

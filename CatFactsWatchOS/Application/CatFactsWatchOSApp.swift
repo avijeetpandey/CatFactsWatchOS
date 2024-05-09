@@ -13,8 +13,6 @@ struct CatFactsWatchOS_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
             RootView()
-                .modelContainer(for: SavedFact.self,
-                                isAutosaveEnabled: false)
-        }
+        }.modelContainer(for: [SavedFact.self])
     }
 }

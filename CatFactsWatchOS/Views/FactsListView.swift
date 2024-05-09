@@ -27,6 +27,8 @@ struct FactsListView: View {
     }
 }
 
+// MARK: - check if a record already exisits
+
 #Preview {
     FactsListView(facts: [.init(text: "This is a sample fact", id: NSUUID().uuidString)])
 }

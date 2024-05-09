@@ -10,7 +10,8 @@ import SwiftData
 
 // MARK: - SavedFactsView
 struct SavedFactsView: View {
-    @Query(sort: \SavedFact.text, animation: .smooth)
+    @Query(sort: \SavedFact.text, animation: .bouncy)
+    
     private var facts: [SavedFact]
     
     var body: some View {
